@@ -21,7 +21,7 @@ session.setDownloadPath(app.getPath('userDesktop'));
 
 ### 備註
 
-1. 適用於從 `<webview>` 觸發的下載事件
+1. 適用於從 `<webview>` 觸發的下載事件。但件事情成立的前提是你的 `<webview>` 必需要沒有使用 partition 這個值 !! 要不然你會發現下載視窗還是會導回原本預設的目錄 ... （這是一個大雷，我卡好久）
 2. `session.setDownloadPath()` 在 v0.30.x, v0.31.x 是好的，v0.32.x 開始壞了，v0.33.8 後又修好了（我剛好用到 v0.33.x 壞掉的版本所以試超久 ... ）
 3. **強烈建議一定要改這個預設值**
 
